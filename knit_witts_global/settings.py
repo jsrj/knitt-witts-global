@@ -31,12 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    # Core Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Project-Specific Apps
+    'inventory'
 ]
 
 MIDDLEWARE = [
@@ -104,14 +109,22 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+print("Language: "+LANGUAGE_CODE)
 
-TIME_ZONE = 'Americas/Los_Angeles'
+TIME_ZONE = 'America/Los_Angeles'
+print("Time Zone: "+TIME_ZONE)
 
 USE_I18N = True
+if USE_I18N:
+    print("Using I18N...")
 
 USE_L10N = True
+if USE_L10N:
+    print("Using L10N...")
 
 USE_TZ = True
+if USE_TZ:
+    print("using TZ...")
 
 
 # Static files (CSS, JavaScript, Images)
