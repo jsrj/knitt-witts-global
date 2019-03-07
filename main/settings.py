@@ -45,7 +45,10 @@ INSTALLED_APPS = [
     'django_heroku',
 
     # Project-Specific Apps
+    'core',
     'inventory',
+    'product',
+    'users',
 ]
 
 MIDDLEWARE = [
