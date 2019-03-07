@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 
-# Create your views here.
+# Home Page - index.html
 class HomePageView(TemplateView):
 
     def get(self, request, **kwargs):
@@ -10,3 +10,8 @@ class HomePageView(TemplateView):
 
     # def post(request, **kwargs):
     #     return render(request, '', context=None)
+
+
+# About Page - about.html
+class AboutPageView(TemplateView):
+    template_name = "about.html"
