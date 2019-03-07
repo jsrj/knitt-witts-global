@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django',
 
+    # Deployment-Specific Apps
+    'django_heroku',
+
     # Project-Specific Apps
     'inventory',
 ]
