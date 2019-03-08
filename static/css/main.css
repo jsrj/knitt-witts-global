@@ -1,3 +1,33 @@
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(75, 77, 173);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#promo-bar {
+  background-color: rgba(242, 239, 194, 1);
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  width: 62.5rem;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#account-nav {
+  background-color: rgba(153, 53, 65, 1);
+}
+
+#account-nav > span {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#account-nav > span > * {
+  margin: 3px;
 }
