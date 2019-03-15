@@ -8,7 +8,8 @@ class HomePageView(TemplateView):
 
     def get(self, request, **kwargs):
         return render(request, 'index.html', {
-            'title': "Knit Witts Global"
+            'title': "Knit Witts Global",
+            'subTitle': "Coming Soon",
         })
         # return redirect('http://www.knitwittsbypaulette.com/')
 
