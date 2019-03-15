@@ -7,13 +7,13 @@ from django.shortcuts import redirect
 class HomePageView(TemplateView):
 
     def get(self, request, **kwargs):
-        # return render(request, 'index.html', context=None)
-        return redirect('https://www.knitwittsbypaulette.com/')
+        return render(request, 'index.html', context=None)
+        # return redirect('http://www.knitwittsbypaulette.com/')
 
     # def post(request, **kwargs):
     #     return render(request, '', context=None)
 
 
 # About Page - about.html
-class AboutPageView(TemplateView):
-    template_name = "about.html"
+# class AboutPageView(TemplateView):
+#     template_name = "about.html"
