@@ -10,6 +10,8 @@ class HomePageView(TemplateView):
         return render(request, 'index.html', {
             'title': "Knit Witts Global",
             'subTitle': "Coming Soon",
+            'visitorMessage': "Knit Witts Global is coming soon. In the meantime, check us out on these social networks",
+            'newsletterMessage': "Join the waiting list for the beta. We'll keep you posted."
         })
         # return redirect('http://www.knitwittsbypaulette.com/')
 
