@@ -16,7 +16,8 @@
 	<link href="{% static 'css/coming-sssoon.css' %}" rel="stylesheet" />
 
     <!--     Fonts     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 </head>
 
@@ -48,36 +49,19 @@
                 <li><a href="#"><img src="{% static 'images/flags/FR.png' %}"/> Français</a></li>
                 <li><a href="#"><img src="{% static 'images/flags/RO.png' %}"/> Română</a></li>
                 <li><a href="#"><img src="{% static 'images/flags/IT.png' %}"/> Italiano</a></li>
-
-                <li class="divider"></li>
-                <li><a href="#"><img src="{% static 'images/flags/ES.png' %}"/> Español <span class="label label-default">soon</span></a></li>
-                <li><a href="#"><img src="{% static 'images/flags/BR.png' %}"/> Português <span class="label label-default">soon</span></a></li>
-                <li><a href="#"><img src="{% static 'images/flags/JP.png' %}"/> 日本語 <span class="label label-default">soon</span></a></li>
-                <li><a href="#"><img src="{% static 'images/flags/TR.png' %}"/> Türkçe <span class="label label-default">soon</span></a></li>
-
               </ul>
         </li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
+          {% for link in socialLinks %}
             <li>
-                <a href="#">
-                    <i class="fa fa-facebook-square"></i>
-                    Share
+                <a href="{{ link.href }}" target="_blank">
+                    <i class="{{ link.iconClass }}"></i>
+                    {{ link.name }}
                 </a>
             </li>
-             <li>
-                <a href="#">
-                    <i class="fa fa-twitter"></i>
-                    Tweet
-                </a>
-            </li>
-             <li>
-                <a href="#">
-                    <i class="fa fa-envelope-o"></i>
-                    Email
-                </a>
-            </li>
+          {% endfor %}
        </ul>
 
     </div><!-- /.navbar-collapse -->
