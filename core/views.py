@@ -11,13 +11,25 @@ class HomePageView(TemplateView):
             'title': "Knit Witts Global",
             'subTitle': "Coming Soon",
             'visitorMessage': "Knit Witts Global is coming soon. In the meantime, check us out on these social networks",
-            'newsletterMessage': "Join the waiting list for the beta. We'll keep you posted."
+            'newsletterMessage': "Join the waiting list for the beta. We'll keep you posted.",
+            'socialLinks': [
+                {
+                    'name': "Facebook",
+                    'iconClass': "fab fa-facebook-square",
+                    'href': "https://www.facebook.com/KnitWittsByPauletteLack/",
+                },
+                {
+                    'name': "Instagram",
+                    'iconClass': "fab fa-instagram",
+                    'href': "https://www.instagram.com/knitwittsbypaulette/",
+                },
+                {
+                    'name': "Pinterest",
+                    'iconClass': "fab fa-pinterest-square",
+                    'href': "https://www.pinterest.com/paulettegemjars/",
+                },
+            ],
         })
-        # return redirect('http://www.knitwittsbypaulette.com/')
-
-    # def post(request, **kwargs):
-    #     return render(request, '', context=None)
-
 
 # About Page - about.html
 # class AboutPageView(TemplateView):
